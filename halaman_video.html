@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .play-btn{
+            width: 50px;
+            position: relative;
+            top: -50%;
+            cursor: pointer;
+            transition: 0.5s;
+            opacity: 0;
+        }
+        .col-md-4:hover .play-btn{
+            opacity: 1;
+        }
+        .modal-content{
+            background: transparent !important;
+            border: none !important;
+        }
+
+    </style>
+</head>
+<body style="overflow: hidden; background: url(assets/img/bg1.jpg); background-size: 100%;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <h2 class="text-white">MY PLAYLIST</h2>
+    <a href="index.html"style="margin-left: 780px">
+        <button class="btn btn-outline-light" type="submit" style="margin-left: auto;"> 
+            <i class="fas fa-home mr-2" style="font-size: 20px;"></i>Home
+        </button>
+    </a>
+    <a href="halaman_musik.html" class="ml-4">
+        <button class="btn btn-outline-light" type="submit" style="margin-left: auto;"> 
+            <i class="fas fa-music mr-2" style="font-size: 20px;"></i>Music
+        </button>
+    </a>
+    <a href="halaman_video.html" class="ml-4">
+        <button class="btn btn-outline-light" type="submit"> 
+            <i class="fas fa-video mr-2" style="font-size: 20px;"></i>Video
+        </button>
+    </a>  
+  </nav>
+
+    <div class="container text-center">
+        <h1 style="font-family: sans-serif; margin-top: 80px;">LIST VIDEO</h1>
+        <div class="row" style="margin-top: 100px">
+            <div class="col-md-4">
+                <img src="assets/img/kartonyono.jpg" width="100%" alt="">
+                <img src="assets/img/play-grey.png" class="play-btn rounded-circle" alt="" data-toggle="modal" data-target="#play-video-1">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/tanpo tresnamu.jpg" width="100%" alt="">
+                <img src="assets/img/play-grey.png" class="play-btn rounded-circle" alt="" data-toggle="modal" data-target="#play-video-2">
+            </div>
+            <div class="col-md-4">
+                <img src="assets/img/sampek-tuwek.jpg" width="100%" alt="">
+                <img src="assets/img/play-grey.png" class="play-btn rounded-circle" alt="" data-toggle="modal" data-target="#play-video-3">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="play-video-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <video width="100%" controls autoplay>
+                  <source src="assets/video/Denny_Caknan_ kartonyono_medot_janji_official_video_klip_denny_caknan_WlmWXoP0C0s_720p.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="play-video-2">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <video width="100%" controls autoplay>
+                  <source src="assets/video/Denny_Caknan_tanpo_tresnamu_official_video_clip_UZfF0fKKHsQ_720p.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="play-video-3">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <video width="100%" controls autoplay>
+                <source src="assets/video/Denny_Caknan__SAMPEK_TUWEK(720p).mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
